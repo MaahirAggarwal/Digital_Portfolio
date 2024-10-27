@@ -8,11 +8,16 @@
         body {
             font-family: Arial, sans-serif;
             color: #42a4f5;
-            background: linear-gradient(45deg, #00c6ff, #0072ff);
-            background-size: 400% 400%;
+            color:#2f13bd;
+            background-image: url('BG_3.avif');
             animation: gradientShift 10s ease infinite;
             margin: 0;
             overflow-x: hidden;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         @keyframes backgroundPulse {
             0%, 100% { background: linear-gradient(135deg, #001f3f, #001c38); }
@@ -86,7 +91,7 @@
     </nav>
 
     <div class="container">
-        <h1 style="color:black;">My ambitions</h1>
+        <h1 style="color:#ffdf00;">My ambitions</h1>
         <div class="ambition">Become a leading expert in AI and Machine Learning.</div>
         <div class="ambition">Work on impactful projects that advance technology.</div>
         <div class="ambition">Contribute to open-source projects and collaborate with the tech community.</div>
