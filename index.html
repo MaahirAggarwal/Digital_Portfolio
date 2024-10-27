@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            background-size: 400% 400%;
+            animation: gradientShift 10s ease infinite;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s;
+            padding: 8px 16px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        nav a:hover {
+            color: #ffdf00;
+            transform: scale(1.2);
+            box-shadow: 0 0 15px #ffdf00;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 160px auto;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            color: #ffdf00;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid #ffdf00;
+            transition: transform 0.4s;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        .btn-learn-more {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background: linear-gradient(45deg, #ff00cc, #3333ff);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 0 15px #ff00cc;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn-learn-more:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px #ff00cc, 0 0 35px #3333ff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">About Me</a>
+        <a href="achievements.html">Interests</a>
+        <a href="projects.html">Projects</a>
+        <a href="ambitions.html">Ambitions</a>
+    </nav>
+
+    <div class="container">
+        <img src="Maahir_Image.jpeg" alt="Profile Picture" class="profile-pic">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Maahir Aggarwal. A passionate developer, chess player, and AI enthusiast with a love for creativity and innovation.</p>
+        
+        <a href="achievements.html" class="btn-learn-more">Learn More →</a>
+    </div>
+</body>
+</html>

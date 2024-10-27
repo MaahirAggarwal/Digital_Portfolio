@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background: linear-gradient(45deg, #0072ff, #00c6ff);
+            background-size: 400% 400%;
+            animation: gradientShift 10s ease infinite;
+            margin: 0;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s;
+            padding: 8px 16px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        nav a:hover {
+            color: #ffdf00;
+            transform: scale(1.2);
+            box-shadow: 0 0 15px #ffdf00;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 160px auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        .project-tabs {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .project-tab {
+            flex: 1;
+            padding: 15px;
+            background: linear-gradient(45deg, #ffaa00, #ff9900);
+            color: #000;
+            text-align: center;
+            border-radius: 8px;
+            margin: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-tab:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 153, 0, 0.7);
+        }
+
+        .project-content {
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            font-size: 1.1em;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid #ffdf00;
+            transition: transform 0.4s;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.1) rotate(10deg);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">About Me</a>
+        <a href="achievements.html">Interests</a>
+        <a href="projects.html">Projects</a>
+        <a href="ambitions.html">Ambitions</a>
+    </nav>
+    
+    <div class="container">
+        <h1>My Projects</h1>
+        <div class="project-tabs">
+            
+            <div class="project-tab" onclick="showProject('project1')"><h1>ENIAC Website</h1><img src="ENIAC_Logo.png" alt="Profile Picture" class="profile-pic">
+            <p>VIRUS'24-The official tech event hosted by the ENIAC counsel of Bluebells School International! click here!</p></div>
+            <div class="project-tab" onclick="showProject('project2')"><h1>Chess BOT</h1><img src="Chess_Robot.jpg" alt="Profile Picture" class="profile-pic">
+            <p>Test your skills against my very own Chess BOT! click here!</p></div>
+            <div class="project-tab" onclick="showProject('project3')"><h1>Stock Market Website</h1><img src="SM_Image.jpg" alt="Profile Picture" class="profile-pic">
+            <p>New to the stock market?- We ve got you! click here!</p></div>
+            <div class="project-tab" onclick="showProject('project4')"><h1>Algorithm for Stock Trading</h1><img src="Algo.jpg" alt="Profile Picture" class="profile-pic">
+            <p>A new way of trading! click here!</p></div>
+        </div>
+        
+        <div id="project2" class="project-content" style="display: none;">Details about Project 2</div>
+        <div id="project3" class="project-content" style="display: none;">Details about Project 3</div>
+        <div id="project4" class="project-content" style="display: none;">Details about Project 4</div>
+    </div>
+
+    <script>
+        function showProject(projectId) {
+            const projects = document.querySelectorAll('.project-content');
+            projects.forEach(project => project.style.display = 'none');
+            document.getElementById(projectId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
