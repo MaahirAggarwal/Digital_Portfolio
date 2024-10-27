@@ -54,6 +54,7 @@
             gap: 20px;
             background: rgba(0, 0, 0, 0.6);
             border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
         }
 
         .tabs {
@@ -62,19 +63,20 @@
 
         .tab {
             padding: 10px;
-            background: linear-gradient(45deg, #140c9c,#140c9c);
+            background: linear-gradient(45deg, );
             color: #000;
             border-radius: 8px;
             margin: 8px 0;
             cursor: pointer;
             text-align: center;
             transition: background 0.3s, transform 0.3s;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
         }
 
         .tab:hover {
             background: linear-gradient(45deg, #01000f);
             transform: translateX(10px);
-            box-shadow: 0 0 15px rgba(255, 153, 0, 0.7);
+            box-shadow: 0 0 10000px rgba(255, 153, 0, 0.7);
         }
 
         .tab-content {
@@ -125,16 +127,16 @@
         <div class="tabs">
             <div class="tab" onclick="window.open('https://ratings.fide.com/profile/251390101')">
             <img src="Chess_Pawn.jpg" alt="Profile Picture" class="profile-pic">
-            <h2>Chess</h2></div>
+            <h2 style="color:#ffdf00;">Chess</h2></div>
             <div class="tab" onclick="window.open('')">
             <img src="Harmonium image.gif" alt="Profile Picture" class="profile-pic">
-            <h2>Music</h2></div>
+            <h2 style="color:#ffdf00;">Music</h2></div>
             <div class="tab" onclick="window.open('https://github.com/MaahirAggarwal')">
             <img src="Programming.jpg" alt="Profile Picture" class="profile-pic">
-            <h2>Programming</h2></div>
+            <h2 style="color:#ffdf00;">Programming</h2></div>
             <div class="tab" onclick="window.open()">
             <img src='SM_Image.jpg' alt="Profile Picture" class="profile-pic">
-            <h2>Stock Market</h2></div>
+            <h2 style="color:#ffdf00;">Stock Market</h2></div>
         </div>
 
     </div>
