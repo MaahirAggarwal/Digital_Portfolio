@@ -8,10 +8,16 @@
         body {
             font-family: Arial, sans-serif;
             color: #fff;
-            background: linear-gradient(45deg, #0072ff, #00c6ff);
-            background-size: 400% 400%;
+            color:#2f13bd;
+            background-image: url('BG_3.avif');
+            background-size: 50% ;
             animation: gradientShift 10s ease infinite;
             margin: 0;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         nav {
@@ -61,7 +67,7 @@
         .project-tab {
             flex: 1;
             padding: 15px;
-            background: linear-gradient(45deg, #ffaa00, #ff9900);
+            background: linear-gradient(45deg,#140c9c,#140c9c);
             color: #000;
             text-align: center;
             border-radius: 8px;
@@ -108,7 +114,7 @@
     </nav>
     
     <div class="container">
-        <h1>My Projects</h1>
+        <h1 style="color:#ffdf00;">My Projects</h1>
         <div class="project-tabs">
             
             <div class="project-tab" onclick="showProject('project1')"><h1>ENIAC Website</h1><a href="https://bbs-eniac.github.io/Virus-2024/home.html"><img src="ENIAC_Logo.png" alt="Profile Picture" class="profile-pic"></a>
@@ -133,4 +139,3 @@
     </script>
 </body>
 </html>
-
