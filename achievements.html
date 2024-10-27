@@ -8,10 +8,16 @@
         body {
             font-family: Arial, sans-serif;
             color: #fff;
-            background: linear-gradient(45deg, #0072ff, #00c6ff);
-            background-size: 400% 400%;
+            color:#2f13bd;
+            background-image: url('BG_3.avif');
+            background-size: 50% ;
             animation: gradientShift 10s ease infinite;
             margin: 0;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         nav {
@@ -23,7 +29,7 @@
             top: 0;
             z-index: 100;
         }
-                nav a {
+        nav a {
             color: #ffffff;
             margin: 0 15px;
             text-decoration: none;
@@ -56,7 +62,7 @@
 
         .tab {
             padding: 10px;
-            background: linear-gradient(45deg, #ffdf00, #ffaa00);
+            background: linear-gradient(45deg, #140c9c,#140c9c);
             color: #000;
             border-radius: 8px;
             margin: 8px 0;
@@ -66,7 +72,7 @@
         }
 
         .tab:hover {
-            background: linear-gradient(45deg, #ffaa00, #ff9900);
+            background: linear-gradient(45deg, #01000f);
             transform: translateX(10px);
             box-shadow: 0 0 15px rgba(255, 153, 0, 0.7);
         }
@@ -119,16 +125,16 @@
         <div class="tabs">
             <div class="tab" onclick="window.open('https://ratings.fide.com/profile/251390101')">
             <img src="Chess_Pawn.jpg" alt="Profile Picture" class="profile-pic">
-            <p>Chess</p></div>
+            <h2>Chess</h2></div>
             <div class="tab" onclick="window.open('')">
             <img src="Harmonium image.gif" alt="Profile Picture" class="profile-pic">
-            <p>Music</p></div>
+            <h2>Music</h2></div>
             <div class="tab" onclick="window.open('https://github.com/MaahirAggarwal')">
             <img src="Programming.jpg" alt="Profile Picture" class="profile-pic">
-            <p>Programming</p></div>
+            <h2>Programming</h2></div>
             <div class="tab" onclick="window.open()">
             <img src='SM_Image.jpg' alt="Profile Picture" class="profile-pic">
-            <p>Stock Market</p></div>
+            <h2>Stock Market</h2></div>
         </div>
 
     </div>
