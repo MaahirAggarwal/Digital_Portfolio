@@ -47,7 +47,7 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 160px auto;
             padding: 20px;
             display: flex;
@@ -58,7 +58,10 @@
         }
 
         .tabs {
+            display: flex;
+            justify-content: space-between;
             width: 100%;
+            
         }
 
         .tab {
@@ -71,6 +74,7 @@
             text-align: center;
             transition: background 0.3s, transform 0.3s;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            display:inline-block;
         }
 
         .tab:hover {
@@ -112,6 +116,23 @@
             color: #ffdf00;
         }
 
+        .btn-learn-more {
+            margin-top: 20px;
+            
+            padding: 10px 20px;
+            color: #fff;
+            background: linear-gradient(45deg, #ff00cc, #3333ff);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 0 15px #ff00cc;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .btn-learn-more:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px #ff00cc, 0 0 35px #3333ff;
+        }
+
     </style>
 </head>
 <body>
@@ -125,17 +146,22 @@
 
     <div class="container">
         <div class="tabs">
-            <div class="tab" onclick="window.open('https://ratings.fide.com/profile/25139010')">
+            <div class="tab" >
             <img src="Chess_Pawn.jpg" alt="Profile Picture" class="profile-pic">
+            <a href="https://ratings.fide.com/profile/25139010" class="btn-learn-more">FIDE Profile →</a>
             <h2 style="color:#ffdf00;">Chess</h2></div>
-            <div class="tab" onclick="window.open('')">
+            
+            <div class="tab" >
             <img src="Harmonium image.gif" alt="Profile Picture" class="profile-pic">
+            <a href="BSF_Music_Video.MTS" class="btn-learn-more">View my Performance →</a>
             <h2 style="color:#ffdf00;">Music</h2></div>
-            <div class="tab" onclick="window.open('https://github.com/MaahirAggarwal')">
+            <div class="tab" >
             <img src="Programming.jpg" alt="Profile Picture" class="profile-pic">
+            <a href="https://github.com/MaahirAggarwal" class="btn-learn-more">Github Profile →</a>
             <h2 style="color:#ffdf00;">Programming</h2></div>
-            <div class="tab" onclick="window.open()">
+            <div class="tab" >
             <img src='SM_Image.jpg' alt="Profile Picture" class="profile-pic">
+            <a href="https://maahiraggarwal.github.io/Stock_Market_Website/home" class="btn-learn-more">Stock Market website! →</a>
             <h2 style="color:#ffdf00;">Stock Market</h2></div>
         </div>
 
