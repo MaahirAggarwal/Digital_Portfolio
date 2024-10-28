@@ -65,7 +65,7 @@
         }
         .ambition {
             font-size: 1.5em;
-            background: #003366;
+            background: #140c9c;
             margin: 10px;
             padding: 20px;
             border-radius: 10px;
@@ -80,12 +80,29 @@
             from { transform: translateY(20px); }
             to { transform: translateY(0); }
         }
+        .btn-learn-more {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background: linear-gradient(45deg, #ff00cc, #3333ff);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 0 15px #ff00cc;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn-learn-more:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px #ff00cc, 0 0 35px #3333ff;
+        }
     </style>
 </head>
 <body>
     <nav>
         <a href="index.html">About Me</a>
-        <a href="achievements.html">Achievements</a>
+        <a href="achievements.html">Interests</a>
         <a href="projects.html">Projects</a>
         <a href="ambitions.html">Ambitions</a>
     </nav>
@@ -96,6 +113,7 @@
         <div class="ambition">Work on impactful projects that advance technology.</div>
         <div class="ambition">Contribute to open-source projects and collaborate with the tech community.</div>
         <div class="ambition">Establish a startup focusing on AI-driven solutions.</div>
+        <a href="MAAHIR_CV.pdf" class="btn-learn-more">Download CV →</a>
     </div>
 
     <script>
